@@ -28,7 +28,7 @@ public class Client {
                     if (input.hasNext()) {
                         String q = input.next();
                         sendMsg(name+": "+q);
-                        if (q.equalsIgnoreCase("close")) break;
+                        if (q.equalsIgnoreCase("\\end")) break;
                     }
                 }
                 close(sock);
