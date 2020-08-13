@@ -28,7 +28,7 @@ public class Client {
                     if (input.hasNext()) {
                         String q = input.next();
                         sendMsg(name+": "+q);
-                        if (q.equalsIgnoreCase("\\end")) break;
+                        if (q.equalsIgnoreCase("/end")) break;
                     }
                 }
                 close(sock);
@@ -44,7 +44,7 @@ public class Client {
                     if (in.hasNext()) {
                         String w = in.nextLine();
                         System.out.println(w);
-                        if (w.contains("\\end")) break;
+                        if (w.contains("/end")) break;
                     }
                 }
                 close(sock);
